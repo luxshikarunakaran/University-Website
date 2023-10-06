@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website design | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <!--Header-->
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fab fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fab fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+       <h1>About US</h1>
+    </section>
+
+
+
+<!---------------- About us -------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest Unibersity</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur totam explicabo, maiores facere 
+                    rerum et officiis libero quaerat ducimus natus cum sint quo necessitatibus suscipit ipsam assumenda error 
+                    dolor ex!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate maxime iste dolorum ipsum. 
+                    Iste nobis inventore perspiciatis dolores omnis corporis aspernatur aperiam fugiat minima? Aut esse 
+                    laborum repellat fugit optio.
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+
+            <div class="about-col">
+                <img src="images/about.jpg" alt="about">
+            </div>
+        </div>
+    </section>
+<hr>
+<!--------- footer ---------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit et eveniet sequi voluptas earum dolorem, 
+        est quod! <br> Quia hic praesentium molestias doloremque blanditiis vitae ab nesciunt, labore obcaecati est!
+    </p>
+
+    <div class="icons">
+        <i class="fab fa-facebook-f socialIcon"></i>
+        <i class="fab fa-instagram socialIcon"></i>
+        <i class="fab fa-twitter socialIcon"></i>
+        <i class="fab fa-linkedin socialIcon"></i>
+    </div>
+
+    <p>Made with <i class="fab fa-heart-o"></i> Easy Tutorials </p>
+</section>
+
+
+
+
+<!----------------Javascript for Toggle menu--------------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>
